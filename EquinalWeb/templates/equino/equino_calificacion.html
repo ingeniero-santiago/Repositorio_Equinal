@@ -1,0 +1,303 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+<div class="container">
+<div class="row" style="border: none;">
+	
+    
+    
+   <div class="col-ms-6">
+
+<div class="panel panel-default">
+<div class="panel-heading">  <h4 >Perfil del equino</h4></div>
+<div class="panel-body">
+   
+<div class="box box-info">
+    
+        <div class="box-body">
+                 <div class="col-sm-3">
+                 <div  align="center"> <img alt="User Pic" src="../static/img/equino.jpg" id="profile-image1" class="img-circle img-responsive"> 
+            
+            <input id="profile-image-upload" class="hidden" type="file">
+                 </div>
+          
+          <br>
+
+          <!-- /input-group -->
+        </div>
+        <div class="col-sm-6">
+        <h1 style="color:#00b1b1;">Bucefalo de Vuelta Grande</h1></span>
+          <span><p>Criadero Barcelona</p></span>            
+        </div>
+        <div class="clearfix"></div>
+        <hr style="margin:5px 0 5px 0;">
+
+         
+		<div class="col-sm-5 col-xs-6 tital " >Raza:</div><div class="col-sm-7">Trocha y Galope</div>
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Padre:</div><div class="col-sm-7">Tayrona del Paso</div>
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Madre:</div><div class="col-sm-7">Sevillana</div>
+
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Color:</div><div class="col-sm-7">Marrón</div>
+
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Sexo:</div><div class="col-sm-7">Macho</div>
+
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Edad:</div><div class="col-sm-7">3 años</div>
+
+		<div class="clearfix"></div>
+		<div class="bot-border"></div>
+
+		<div class="col-sm-5 col-xs-6 tital " >Peso:</div><div class="col-sm-7">56.8 Kg</div>
+
+
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+
+    </div>
+   
+        
+</div>
+
+
+</div>
+</div>
+
+<div class="col-ms-3">
+	<div class="panel panel-default">
+	<div class="embed-responsive embed-responsive-16by9" style="
+    padding-bottom: 0px;
+    height: 370px;
+    ">
+  {% load static %}<iframe class="embed-responsive-item" src="{% static 'img/video.mp4' %}"></iframe>
+</div>
+</div>
+</div>  
+
+   
+
+   
+   
+   
+</div>
+</div>
+
+<br><br>
+
+
+<div class="container">
+<div class="row">
+	<div class="panel panel-default">
+<div class="panel-heading">  <h1>Calificación para este ejemplar</h1></div>
+		
+			<!-- Pregunta 1-->
+            <div class="panel-heading">
+                <div class="row">
+                    <table class="col-sm-12">
+                        <tbody><tr>
+                            <td class="col-sm-1">
+                                <h4>1.</h4>
+                            </td>
+                            <td class="col-sm-5 col-md-6 col-lg-6">
+                                Fenotipo del ejemplar                                
+                                </td>
+                            
+                            </td>
+                        </tr> 
+                    </tbody></table>
+                </div>
+            </div>
+            <form action="">
+            <div class="panel-body">
+                <div class="row">
+				  <p class="clasificacion">
+				    <input id="radio11" type="radio" name="estrellas" value="5">
+				    <label for="radio11">★</label>
+				    <input id="radio21" type="radio" name="estrellas" value="4">
+				    <label for="radio21">★</label>
+				    <input id="radio31" type="radio" name="estrellas" value="3">
+				    <label for="radio31">★</label>
+				    <input id="radio41" type="radio" name="estrellas" value="2">
+				    <label for="radio41">★</label>
+				    <input id="radio51" type="radio" name="estrellas" value="1">
+				    <label for="radio51">★</label>
+				  </p>
+                </div>
+            </div>
+            </form>
+
+            <!-- Pregunta 2-->
+            <div class="panel-heading">
+                <div class="row">
+                    <table class="col-sm-12">
+                        <tbody><tr>
+                            <td class="col-sm-1">
+                                <h4>2.</h4>
+                            </td>
+                            <td class="col-sm-5 col-md-6 col-lg-6">
+                                Manejo del chalán                             
+                                </td>
+                            
+                            </td>
+                        </tr> 
+                    </tbody></table>
+                </div>
+            </div>
+            <form action="">
+            <div class="panel-body">
+                <div class="row">
+				  <p class="clasificacion">
+				    <input id="radio12" type="radio" name="estrellas" value="5">
+				    <label for="radio12">★</label>
+				    <input id="radio22" type="radio" name="estrellas" value="4">
+				    <label for="radio22">★</label>
+				    <input id="radio32" type="radio" name="estrellas" value="3">
+				    <label for="radio32">★</label>
+				    <input id="radio42" type="radio" name="estrellas" value="2">
+				    <label for="radio42">★</label>
+				    <input id="radio52" type="radio" name="estrellas" value="1">
+				    <label for="radio52">★</label>
+				  </p>
+                </div>
+            </div>
+            </form>
+
+            <!-- Pregunta 3-->
+            <div class="panel-heading">
+                <div class="row">
+                    <table class="col-sm-12">
+                        <tbody><tr>
+                            <td class="col-sm-1">
+                                <h4>3.</h4>
+                            </td>
+                            <td class="col-sm-5 col-md-6 col-lg-6">
+                                Estado sanitario                                
+                                </td>
+                            
+                            </td>
+                        </tr> 
+                    </tbody></table>
+                </div>
+            </div>
+            <form action="">
+            <div class="panel-body">
+                <div class="row">
+				  <p class="clasificacion">
+				    <input id="radio13" type="radio" name="estrellas" value="5">
+				    <label for="radio13">★</label>
+				    <input id="radio23" type="radio" name="estrellas" value="4">
+				    <label for="radio23">★</label>
+				    <input id="radio33" type="radio" name="estrellas" value="3">
+				    <label for="radio33">★</label>
+				    <input id="radio43" type="radio" name="estrellas" value="2">
+				    <label for="radio43">★</label>
+				    <input id="radio53" type="radio" name="estrellas" value="1">
+				    <label for="radio53">★</label>
+				  </p>
+                </div>
+            </div>
+            </form>
+
+            <!-- Pregunta 4-->
+            <div class="panel-heading">
+                <div class="row">
+                    <table class="col-sm-12">
+                        <tbody><tr>
+                            <td class="col-sm-1">
+                                <h4>4.</h4>
+                            </td>
+                            <td class="col-sm-5 col-md-6 col-lg-6">
+                                Genotipo del ejemplar                                
+                                </td>
+                            
+                            </td>
+                        </tr> 
+                    </tbody></table>
+                </div>
+            </div>
+            <form action="">
+            <div class="panel-body">
+                <div class="row">
+				  <p class="clasificacion">
+				    <input id="radio14" type="radio" name="estrellas" value="5">
+				    <label for="radio14">★</label>
+				    <input id="radio24" type="radio" name="estrellas" value="4">
+				    <label for="radio24">★</label>
+				    <input id="radio34" type="radio" name="estrellas" value="3">
+				    <label for="radio34">★</label>
+				    <input id="radio44" type="radio" name="estrellas" value="2">
+				    <label for="radio44">★</label>
+				    <input id="radio54" type="radio" name="estrellas" value="1">
+				    <label for="radio54">★</label>
+				  </p>
+                </div>
+            </div>
+            </form>
+
+            <!-- Pregunta 5-->
+            <div class="panel-heading">
+                <div class="row">
+                    <table class="col-sm-12">
+                        <tbody><tr>
+                            <td class="col-sm-1">
+                                <h4>5.</h4>
+                            </td>
+                            <td class="col-sm-5 col-md-6 col-lg-6">
+                                Calidad de movimientos                              
+                                </td>
+                            
+                            </td>
+                        </tr> 
+                    </tbody></table>
+                </div>
+            </div>
+            <form action="">
+            <div class="panel-body">
+                <div class="row">
+				  <p class="clasificacion">
+				    <input id="radio15" type="radio" name="estrellas" value="5">
+				    <label for="radio15">★</label>
+				    <input id="radio25" type="radio" name="estrellas" value="4">
+				    <label for="radio25">★</label>
+				    <input id="radio35" type="radio" name="estrellas" value="3">
+				    <label for="radio35">★</label>
+				    <input id="radio45" type="radio" name="estrellas" value="2">
+				    <label for="radio45">★</label>
+				    <input id="radio55" type="radio" name="estrellas" value="1">
+				    <label for="radio55">★</label>
+				  </p>
+                </div>
+            </div>
+            </form>
+            <!-- Pregunta 5-->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-8 btn_calificar">
+                    <br>
+                    	<button id="btn"type="submit" class="btn btn-success btn-lg">Enviar calificación</button>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+	</div>
+</div>
+
+
+{% endblock %}

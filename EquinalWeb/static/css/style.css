@@ -1,0 +1,153 @@
+@font-face {
+    font-family: fuentelogo;
+    src: url(../fonts/Gautama.otf);
+}
+
+.fuentelogo{
+	font-family: fuentelogo;
+}
+#tabla{
+	font-size: 1.5em;
+	background-color: #ED4C37;
+}
+
+.col-lg-3
+{
+	width: 20%;
+}
+.bs-component{
+    margin-top: 5px;
+}
+
+.logo
+{
+	width: 200px;
+	padding: 20px;	
+    margin-left: 30px;
+}
+.navbar{
+	font-size: 1.3em;
+}
+
+
+/*Formulario*/
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: #C6B7B7;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 2.5em;
+  padding-right: 45%;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+
+/* -- HEADER -- */
+
+.navbar {
+	margin-bottom: 0;
+
+}
+
+.jumbotron {
+	background:#3973ac;
+	color:#fff;
+	padding:20px 0;
+
+}
+
+/* -- POST -- */
+.main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #999;
+}
+
+.post .post-title a {
+	color:#333;
+}
+
+.post .thumb {
+	margin-right:10px;
+	width:40%;
+}
+
+.post .thumb img {
+	width:100%;
+}
+
+.post .contenedor-botones {
+	width: 100%;
+}
+
+/* -- Media Querie -- */
+@media screen and (max-width: 768px) {
+	.post .thumb {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:10000px;
+	/*left:0;*/
+	/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+h1{
+	font-family: georgia;
+}
+h2{
+	font-family: georgia;
+	font-style: italic;
+}
+p{
+	font-family: verdana;
+}
+article{
+
+	position: relative;
+}
+/*footer{
+	background: #101010;
+}*/

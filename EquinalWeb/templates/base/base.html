@@ -1,0 +1,123 @@
+ {% load staticfiles %}
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="shortcut icon" href="{% static 'img/logo.ico' %}" />
+
+	<title>{% block title %} Equinal {% endblock %}</title>
+
+
+</head>
+<body>
+<header>
+ {% block navbar %}
+  <div class="bs-docs-section clearfix">
+    <div class="menu">
+
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+            <span class="sr-only">Desplegar / Ocultar Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Equinal</a>
+        </div>
+        <!-- Inicia Menu -->
+        <div class="collapse navbar-collapse" id="navegacion-fm">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'equino:index'%}">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                Equinos <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="{% url 'equino:equino_lista'%}">Todos los equinos</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Trocha y Galope</a></li>
+                <li><a href="#">Trote</a></li>
+                <li><a href="#">Caba</a></li>
+
+              </ul>
+            </li>
+            <li><a href="{% url 'equino:equino_lista'%}">Equinos</a></li>
+            <li><a href="#">Estadísticas</a></li>
+            
+          </ul>
+
+          <form action="" class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+{% endblock %}
+</header>
+
+
+<section class="jumbotron">
+    <div class="container">
+      <h1>Equinal</h1>
+      <p>Donde montar es un placer</p>
+    </div>
+  </section>
+	
+  </div>﻿
+  {% block contenido %}
+  <div class="container">
+
+	<div class="jumbotron">
+  	<h1 class="fuentelogo">Bienvenido a Equinal</h1>
+  	<h2 class="fuentelogo">Asociación de criadores de caballos de paso y otros equinos colombianos. </h2> <p class="fuentelogo"> 	Somos una asociación sin ánimo de lucro dedicada al fomento equino.</p>
+  	<p class="fuentelogo"><a class="btn btn-success btn-lg">Leer más</a></p>
+	</div>
+
+  	
+  
+	{% endblock %}
+
+  </div>
+
+
+		<script scr="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script scr="{% static 'js/jquery.js' %}"></script>
+    <script scr="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+		{% block extrajs %}
+      <script>$(document).ready(function(){
+        var altura = $('.menu').offset().top;
+
+        $(window).on('scroll', function(){
+          if ( $(window).scrollTop() > altura ){
+            $('.menu').addClass('menu-fixed');
+          } else {
+            $('.menu').removeClass('menu-fixed');
+          }
+        });
+
+      });
+
+      </script>
+     
+		{% endblock %}
+
+
+</body>
+</html>
